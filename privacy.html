@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How SkyWatch Backup uses the owner's Google Drive account and protects backup data.">
+  <title>Privacy Policy | SkyWatch Backup</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1424;--panel:#14243b;--ink:#f2f7fe;--muted:#b1c3d8;--line:#2c4662;--accent:#61ded3}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:780px;margin:0 auto;padding:45px 22px 70px}h1{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.035em;line-height:1.2}h2{font-size:1.22rem;margin:27px 0 5px}p,li{color:var(--muted)}.panel{background:var(--panel);border:1px solid var(--line);padding:28px;border-radius:16px;margin-top:26px}.panel h2:first-child{margin-top:0}a{color:#82e9df;text-underline-offset:3px}.eyebrow{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:800}strong{color:var(--ink)}footer{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);font-size:.87rem;color:var(--muted)}
+  </style>
+</head>
+<body><main>
+  <a href="./">&larr; SkyWatch Backup home</a>
+  <div class="eyebrow" style="margin-top:30px">Personal-use data notice</div>
+  <h1>Privacy Policy</h1>
+  <p>Effective October 26, 2026. This policy describes the intended operation of the personal SkyWatch Backup utility when the owner activates its Google Drive integration.</p>
+  <section class="panel">
+    <h2>What data is accessed</h2>
+    <p>The utility requests Google Drive access using the <strong>drive.file</strong> permission. It creates and reads files used for the owner's recovery backups, including uploaded archives, checksum files, and related listings needed for verification. It does not request unrestricted access to the owner's entire Google Drive.</p>
+    <h2>Why that data is used</h2>
+    <p>Google Drive data is used only to upload backup archives, verify their successful transfer, check backup availability, and allow the owner to restore or manage them. The application does not use Google Drive data for advertising, profiling, analytics, or model training.</p>
+    <h2>What the backups may contain</h2>
+    <p>Backup archives may include local aircraft-card collection data, application files, user-uploaded aircraft images, Raspberry Pi application settings, and credentials or PIN configuration embedded in those local settings. These files belong to the owner.</p>
+    <p><strong>Important:</strong> The planned cloud-backup archives are ordinary compressed files, not separately end-to-end encrypted archives. The owner controls access through the dedicated Google account and should safeguard its credentials.</p>
+    <h2>Storage and sharing</h2>
+    <p>Backups are sent from the owner's Raspberry Pi directly to the owner's designated Google Drive account using rclone and Google's authenticated API. They are not forwarded to a third-party operator, advertised publicly, sold, or shared for unrelated purposes. Google processes stored files as the hosting provider under its own terms and policies.</p>
+    <p>This informational GitHub Pages website contains no backups, Google OAuth access tokens, passwords, child profiles, or home network access controls.</p>
+    <h2>Retention and deletion</h2>
+    <p>The initial backup design keeps a limited number of recent local archives and retains uploaded cloud archives until the owner deletes them or configures a retention policy. The owner can delete cloud backups in Google Drive and revoke the application's access in their Google Account settings. Removing access may prevent future automatic backups until reauthorization.</p>
+    <h2>Website visitors and contact</h2>
+    <p>These static pages do not use application cookies, analytics scripts, or visitor accounts. GitHub, as the site host, may process standard connection information under its own policies. For questions about this personal utility, use the Google OAuth application's designated user-support contact.</p>
+    <h2>Changes to this policy</h2>
+    <p>If backup behavior or Google Drive permissions change, the policy should be updated before the modified application is enabled.</p>
+  </section>
+  <footer><a href="./">Return to SkyWatch Backup</a> · This is an informational site, not the SkyWatch or PlaneDex dashboard.</footer>
+</main></body>
+</html>

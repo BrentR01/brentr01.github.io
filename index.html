@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SkyWatch Backup is a personal utility for backing up a home aircraft-tracking dashboard and aircraft-card collection to the owner's Google Drive.">
+  <title>SkyWatch Backup | Personal Google Drive backup utility</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1424;--panel:#14243b;--ink:#f2f7fe;--muted:#b1c3d8;--line:#2c4662;--accent:#61ded3}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:780px;margin:0 auto;padding:52px 22px 72px}h1{font-size:clamp(2.1rem,6vw,3.5rem);line-height:1.12;margin:14px 0 18px;letter-spacing:-.04em}h2{font-size:1.3rem;margin-top:0;line-height:1.35}p{color:var(--muted)}.eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}.lead{font-size:1.12rem;max-width:65ch}.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:27px;margin-top:24px}.panel p:last-child{margin-bottom:0}.pill{display:inline-block;color:var(--accent);font-size:.78rem;font-weight:750;border:1px solid #326b71;padding:4px 10px;border-radius:50px}a{color:#82e9df;text-underline-offset:3px}footer{color:var(--muted);font-size:.88rem;margin-top:44px;border-top:1px solid var(--line);padding-top:24px}strong{color:var(--ink)}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Personal backup utility</div>
+    <h1>SkyWatch Backup</h1>
+    <p class="lead">A private, owner-operated backup utility for a home aircraft-tracking project and its PlaneDex aircraft-card collection.</p>
+    <span class="pill">Informational site only</span>
+    <section class="panel">
+      <h2>What the application does</h2>
+      <p>When the owner enables it, SkyWatch Backup runs on the owner's Raspberry Pi and creates recovery archives containing the SkyWatch and PlaneDex application files, local collection databases, settings, and user-selected aircraft photographs.</p>
+      <p>It uses <strong>rclone and the Google Drive API</strong> to upload these archives and verify that the uploaded copies can be retrieved intact. The Google account used for this purpose is a dedicated, owner-controlled backup account.</p>
+    </section>
+    <section class="panel">
+      <h2>Why Google Drive access is requested</h2>
+      <p>Google Drive access is needed solely to create, list, retrieve, verify, and, when explicitly configured, manage the owner's backup files. The application is configured to request the <strong>drive.file</strong> scope, which limits access to files created or opened by the application rather than unrestricted access to all Drive content.</p>
+      <p>This is a <strong>personal single-user utility</strong>, not a public cloud-storage or file-sharing service. This informational website does not log into Google, run backup jobs, provide remote access to the Raspberry Pi, or collect visitor information.</p>
+    </section>
+    <section class="panel" id="terms">
+      <h2>Personal-use terms</h2>
+      <p>The software is maintained for the owner's personal home project, provided as-is without commercial service commitments. Backups must be tested before reliance on them; they are not a substitute for independent recovery copies.</p>
+      <p>For the data-handling details, see the <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
+    <footer>SkyWatch Backup is an independently operated personal utility and is not affiliated with Google, GitHub, or OpenAI. No credentials or backups are published on this website. <a href="privacy.html">Privacy Policy</a>.</footer>
+  </main>
+</body>
+</html>
